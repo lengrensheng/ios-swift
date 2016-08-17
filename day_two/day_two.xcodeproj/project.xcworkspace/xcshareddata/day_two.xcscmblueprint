@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D416BAAE8188DB809DAA3A81D601BA60B4DF8D3F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0797334767BB48B318F0FE05CFD97CBA1A404191" : 0,
+    "D416BAAE8188DB809DAA3A81D601BA60B4DF8D3F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FE9C22C0-828D-42A7-8C51-24DCF9DE7F7A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0797334767BB48B318F0FE05CFD97CBA1A404191" : "30DaysofSwift\/",
+    "D416BAAE8188DB809DAA3A81D601BA60B4DF8D3F" : "ios-swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "day_two",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "day_two\/day_two.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lengrensheng\/30DaysofSwift",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0797334767BB48B318F0FE05CFD97CBA1A404191"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lengrensheng\/ios-swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D416BAAE8188DB809DAA3A81D601BA60B4DF8D3F"
+    }
+  ]
+}

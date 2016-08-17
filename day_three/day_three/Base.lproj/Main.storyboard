@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cWp-66-RUz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--WatchPage-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="day_three" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="185" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cHt-Vz-MBw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="220" id="Yct-VR-TRp" customClass="VideoCell" customModule="day_three" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="220"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yct-VR-TRp" id="FfB-1M-ACv">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="219.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="screenImage" image="videoScreenshot01" translatesAutoresizingMaskIntoConstraints="NO" id="dmn-XF-DYN">
+                                                    <rect key="frame" x="0.0" y="8" width="320" height="220"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYe-T2-bYO">
+                                                    <rect key="frame" x="130" y="80" width="60" height="60"/>
+                                                    <state key="normal" image="playBtn"/>
+                                                    <connections>
+                                                        <action selector="playTapped:" destination="Yct-VR-TRp" eventType="touchUpInside" id="xbu-tG-AAs"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji Among Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlt-07-vZv">
+                                                    <rect key="frame" x="101" y="166" width="119" height="20"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube - 06:32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXe-ed-8al">
+                                                    <rect key="frame" x="116" y="188" width="88" height="17"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dmn-XF-DYN" firstAttribute="centerX" secondItem="pYe-T2-bYO" secondAttribute="centerX" id="6wb-Vt-jgS"/>
+                                                <constraint firstItem="pYe-T2-bYO" firstAttribute="centerY" secondItem="FfB-1M-ACv" secondAttribute="centerY" id="A6h-NG-rmz"/>
+                                                <constraint firstAttribute="trailing" secondItem="dmn-XF-DYN" secondAttribute="trailing" id="GFo-Kb-79A"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="CXe-ed-8al" secondAttribute="bottom" constant="7" id="NEL-km-xAy"/>
+                                                <constraint firstItem="dmn-XF-DYN" firstAttribute="top" secondItem="FfB-1M-ACv" secondAttribute="topMargin" id="XZU-z2-StJ"/>
+                                                <constraint firstItem="rlt-07-vZv" firstAttribute="centerX" secondItem="CXe-ed-8al" secondAttribute="centerX" id="hpI-hq-rhN"/>
+                                                <constraint firstItem="rlt-07-vZv" firstAttribute="centerX" secondItem="pYe-T2-bYO" secondAttribute="centerX" id="nnQ-Hd-Waq"/>
+                                                <constraint firstItem="CXe-ed-8al" firstAttribute="top" secondItem="rlt-07-vZv" secondAttribute="bottom" constant="2" id="rkH-5b-Z01"/>
+                                                <constraint firstItem="dmn-XF-DYN" firstAttribute="leading" secondItem="FfB-1M-ACv" secondAttribute="leading" id="u0e-px-YH1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="playButton" destination="pYe-T2-bYO" id="KfX-sg-Mk7"/>
+                                            <outlet property="screenImage" destination="dmn-XF-DYN" id="tBe-Nl-kte"/>
+                                            <outlet property="srcLabel" destination="CXe-ed-8al" id="N51-SO-NsO"/>
+                                            <outlet property="titleLabel" destination="rlt-07-vZv" id="IZG-RS-Pnh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="WatchPage" id="ZXM-Ui-NMr"/>
+                    <connections>
+                        <outlet property="tableView" destination="cHt-Vz-MBw" id="VX0-3S-RGi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95" y="597"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nCr-Td-h3L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cWp-66-RUz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o2y-XQ-4zr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mDV-KN-sfg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKU-9w-TLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-627" y="597"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="playBtn" width="60" height="60"/>
+        <image name="videoScreenshot01" width="375" height="220"/>
+    </resources>
+</document>
