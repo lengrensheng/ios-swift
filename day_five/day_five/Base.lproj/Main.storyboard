@@ -15,27 +15,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6ie-m3-hTM">
-                            <size key="itemSize" width="244" height="429"/>
+                            <size key="itemSize" width="321" height="429"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="tya-DK-F76" customClass="CollectionCellView" customModule="day_five" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="102" width="244" height="429"/>
+                                <rect key="frame" x="0.0" y="102" width="321" height="429"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="244" height="429"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="321" height="429"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="v3V-pe-OsK">
-                                            <rect key="frame" x="8" y="9" width="228" height="367"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="v3V-pe-OsK">
+                                            <rect key="frame" x="8" y="9" width="305" height="367"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="367" id="sRM-FL-qzD"/>
+                                                <constraint firstAttribute="height" constant="367" id="Hlm-fz-0MK"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ContentText" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kma-RD-T6x">
-                                            <rect key="frame" x="79" y="388" width="86" height="22"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ContentText" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kma-RD-T6x">
+                                            <rect key="frame" x="117" y="387" width="86" height="22"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="16"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -45,11 +45,11 @@
                                 </view>
                                 <color key="backgroundColor" red="0.78024504579999998" green="0.77762537639999996" blue="0.8031850962" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="v3V-pe-OsK" secondAttribute="trailing" constant="8" id="8Gz-8Z-OAf"/>
-                                    <constraint firstItem="v3V-pe-OsK" firstAttribute="leading" secondItem="tya-DK-F76" secondAttribute="leadingMargin" id="8Mm-ju-Njo"/>
-                                    <constraint firstItem="kma-RD-T6x" firstAttribute="centerX" secondItem="v3V-pe-OsK" secondAttribute="centerX" id="Cao-a4-BqT"/>
-                                    <constraint firstItem="kma-RD-T6x" firstAttribute="top" secondItem="v3V-pe-OsK" secondAttribute="bottom" constant="12" id="O8x-Xa-gfh"/>
-                                    <constraint firstItem="v3V-pe-OsK" firstAttribute="top" secondItem="tya-DK-F76" secondAttribute="top" constant="8" id="dhY-S7-hTk"/>
+                                    <constraint firstItem="v3V-pe-OsK" firstAttribute="top" secondItem="tya-DK-F76" secondAttribute="topMargin" constant="1" id="3YX-V2-BV2"/>
+                                    <constraint firstItem="v3V-pe-OsK" firstAttribute="trailing" secondItem="tya-DK-F76" secondAttribute="trailingMargin" id="3v6-Fg-9WC"/>
+                                    <constraint firstItem="v3V-pe-OsK" firstAttribute="centerX" secondItem="kma-RD-T6x" secondAttribute="centerX" id="6R6-0h-3Wo"/>
+                                    <constraint firstItem="kma-RD-T6x" firstAttribute="top" secondItem="v3V-pe-OsK" secondAttribute="bottom" constant="11" id="r4b-gA-7Ms"/>
+                                    <constraint firstItem="v3V-pe-OsK" firstAttribute="leading" secondItem="tya-DK-F76" secondAttribute="leadingMargin" id="wUz-Zg-jJj"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="desTitle" destination="kma-RD-T6x" id="bQR-nl-npt"/>

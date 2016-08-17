@@ -52,10 +52,10 @@ class CollectionViewController: UICollectionViewController,UICollectionViewDeleg
         return sectionsInsets;
     }
     
-    
+   /*
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSize(width: 260,height: 440)
-    }
+    }*/
     
     func delay(delay:Double, closure:()->()) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW,Int64(delay * Double(NSEC_PER_SEC))),dispatch_get_main_queue(), closure)
